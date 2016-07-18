@@ -14,6 +14,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.j256.ormlite.android.apptools.OpenHelperManager;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.stmt.UpdateBuilder;
 import com.midwayideas.adapter.SubscriptionAdapter;
 import com.midwayideas.constants.AppConstants;
 import com.midwayideas.database.DBHelper;
@@ -22,12 +25,8 @@ import com.midwayideas.tasks.FetchSubscriptionTask;
 import com.midwayideas.view.CustomProgressDialog;
 import com.midwayideas.webservice.RestEndpointInterface;
 import com.midwayideas.webservice.RetrofitSingleton;
-import com.midwayideas.webservice.WebServiceUtility;
 import com.midwayideas.webservice.request_objects.ExtendSubscriptionRequest;
 import com.midwayideas.webservice.response_objects.SaveServiceReponse;
-import com.j256.ormlite.android.apptools.OpenHelperManager;
-import com.j256.ormlite.dao.Dao;
-import com.j256.ormlite.stmt.UpdateBuilder;
 import com.payUMoney.sdk.PayUmoneySdkInitilizer;
 import com.payUMoney.sdk.SdkConstants;
 
@@ -183,7 +182,6 @@ public class SubscriptionInfoActivity extends AppCompatActivity implements Fetch
                     @Override
                     public void onFailure(Call<SaveServiceReponse> call, Throwable t) {
                         Log.e("Subscription Info", "Subscription extension failed", t);
-                        WebServiceUtility.setRetryAlarm(SubscriptionInfoActivity.this, AppConstants.EXTEND_SUBSCRIPTION_FAILURE_SID, extendSubscriptionRequest);
                     }
                 });
 
