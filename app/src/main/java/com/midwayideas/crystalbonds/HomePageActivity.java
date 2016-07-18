@@ -34,13 +34,9 @@ import java.util.List;
 public class HomePageActivity extends BaseActivity {
 
     ImageView backgroundRatingImage;
-    CustomFontButton getStartedButton;
-    TextInputLayout inputUserPhoneNumberLayout;
-    EditText inputUserPhoneNumberText;
     Dao<User, Integer> userDao;
     QueryBuilder<User, Integer> queryBuilder;
     List<User> userList = new ArrayList<>();
-    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
     SharedPreferences sharedPreferences;
 
     @Override
@@ -50,7 +46,7 @@ public class HomePageActivity extends BaseActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        executeDailyTasks();
+
         String activationStatus = sharedPreferences.getString("activationStatus", null);
 
         if(activationStatus!=null && activationStatus.equals(AppConstants.SUBSCRIPTION_EXPIRED)){
@@ -69,88 +65,6 @@ public class HomePageActivity extends BaseActivity {
 
         backgroundRatingImage = (ImageView) findViewById(R.id.backgroundRatingImage);
         backgroundRatingImage.setImageBitmap(ImageUtility.getImageBitmap(this,R.drawable.shopping_bg));
-        getStartedButton = (CustomFontButton) findViewById(R.id.getStartedButton);
-        inputUserPhoneNumberLayout = (TextInputLayout) findViewById(R.id.inputUserPhoneNumberLayout);
-        inputUserPhoneNumberText =(EditText)findViewById(R.id.inputUserPhoneNumberText);
-
-        inputUserPhoneNumberText.addTextChangedListener(userPhoneTextWatcher);
-
-        getStartedButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveAndNext();
-            }
-        });
     }
 
-    void saveAndNext() {
-        if(ValidationUtil.isValidCellNumber(inputUserPhoneNumberText,inputUserPhoneNumberLayout,"Please enter valid Mobile Number")) {
-            try {
-                KeyboardUtil.hideKeyboard(this, this.getCurrentFocus());
-                queryBuilder.reset();
-                queryBuilder.where().eq("phoneNumber", inputUserPhoneNumberText.getText().toString().trim());
-                userList = queryBuilder.query();
-                if (userList == null || userList.size() == 0) {
-                    User newUser = new User();
-                    newUser.setPhoneNumber(inputUserPhoneNumberText.getText().toString());
-                    userDao.create(newUser);
-                }
-                String outletCode = sharedPreferences.getString("outletCode", null);
-            } catch (SQLException e) {
-                Log.e("HomePageActivity", "Failed to save user", e);
-            }
-        }
-    }
-
-    TextWatcher userPhoneTextWatcher =new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-            checkPhoneNumberCompletion();
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-            checkPhoneNumberCompletion();
-        }
-    };
-
-    private void checkPhoneNumberCompletion()
-    {
-        if(inputUserPhoneNumberText.getText().length()==10)
-        {
-            getStartedButton.setEnabled(true);
-        }
-        else
-        {
-            getStartedButton.setEnabled(false);
-        }
-    }
-
-    private void executeDailyTasks() {
-        Intent intent = new Intent("com.midwayideas.crystalbonds.executedailytasks");
-        sendBroadcast(intent);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            }
-        }, 10*60*1000);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-    }
 }
