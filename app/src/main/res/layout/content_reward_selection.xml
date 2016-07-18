@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/base300"
+    android:layout_height="@dimen/base500"
+    android:weightSum="500"
+    android:orientation="vertical"
+    tools:context="com.admin.crystalrating.RewardSelectionActivity"
+    tools:showIn="@layout/activity_reward_selection">
+
+    <ScrollView
+        android:layout_marginTop="@dimen/base35"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="456">
+
+        <LinearLayout
+            android:id="@+id/rewardLevelBoxList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_weight="44">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/save"
+            android:textColor="#237414"
+            android:textSize="@dimen/font18"
+            android:id="@+id/saveSelectedRewardsButton"
+            android:onClick="saveSelectedRewards"
+            android:layout_weight="1"
+            android:background="@drawable/button_with_top_background" />
+
+        <View
+            android:layout_width="@dimen/base1"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textColor="#237414"
+            android:textSize="@dimen/font18"
+            android:onClick="close"
+            android:layout_weight="1"
+            android:background="@drawable/button_with_top_background" />
+    </LinearLayout>
+
+</LinearLayout>

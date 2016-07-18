@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="rewardName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="fontFamilyFile">@string/applicationFont</item>
+    </style>
+    <style name="rewardWonName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="rewardCost">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font12</item>
+        <item name="android:textColor">@color/dark_red</item>
+        <item name="android:layout_marginBottom">@dimen/base5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamilyFile">@string/applicationFont</item>
+    </style>
+    <style name="rewardImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="fontFamilyFile">@string/applicationFont</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/CustomDialogTitle</item>
+    </style>
+
+    <style name="CustomDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+</resources>

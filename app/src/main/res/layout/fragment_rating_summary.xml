@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base16"
+            android:gravity="center"
+            android:weightSum="10"
+            android:layout_marginBottom="@dimen/base16">
+
+            <com.admin.view.CustomFontTextView
+                style="@style/dateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base16"
+                android:layout_weight="3"
+                android:text="From Date" />
+
+            <com.admin.view.CustomFontTextView
+                android:id="@+id/fromDate"
+                style="@style/dateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="@dimen/base20"
+                android:id="@+id/fromDateImage"
+                android:layout_height="@dimen/base20"
+                android:background="@drawable/date_picker"
+                android:layout_marginRight="@dimen/base16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/summary_date_container"
+            android:gravity="center"
+            android:weightSum="10"
+            android:paddingTop="@dimen/base16"
+            android:paddingBottom="@dimen/base16">
+
+            <com.admin.view.CustomFontTextView
+                style="@style/dateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base16"
+                android:layout_weight="3"
+                android:text="To Date" />
+
+            <com.admin.view.CustomFontTextView
+                android:id="@+id/toDate"
+                style="@style/dateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/toDateImage"
+                android:layout_width="@dimen/base20"
+                android:layout_height="@dimen/base20"
+                android:background="@drawable/date_picker"
+                android:layout_marginRight="@dimen/base16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/serverNotReachableView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/base100" >
+
+            <com.admin.view.CustomFontTextView
+                style="@style/connectionError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not able to connect to server!"
+                android:gravity="center" />
+
+            <com.admin.view.CustomFontButton
+                android:id="@+id/tryAgainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base50"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/base20"
+                android:text="Try again"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:paddingRight="@dimen/base7"
+                android:paddingLeft="@dimen/base7"
+                android:drawableLeft="@drawable/ic_refresh_white"
+                style="@style/tryAgainButton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ratingCategoryFragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/base18" />
+    </LinearLayout>
+</ScrollView>

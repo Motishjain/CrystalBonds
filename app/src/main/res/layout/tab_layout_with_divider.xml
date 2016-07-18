@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Tab title -->
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageViewLogo"
+        android:textSize="@dimen/base20"
+        android:layout_marginLeft="@dimen/base16"
+        android:textColor="@drawable/tab_item_selector" />
+
+    <!-- Tab Logo -->
+    <ImageView
+        android:layout_width="@dimen/base25"
+        android:layout_height="@dimen/base25"
+        android:id="@+id/imageViewLogo"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/base32"/>
+
+    <!-- Tab divider -->
+    <View
+        android:layout_width="@dimen/base1"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+package com.midwayideas.tasks;
+
+import android.graphics.Bitmap;
+import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.ImageView;
+
+import com.midwayideas.constants.AppConstants;
+import com.midwayideas.database.Reward;
+import com.midwayideas.util.ImageUtility;
+
+/**
+ * Created by Admin on 3/23/2016.
+ */
+public class FetchRewardImageTask extends AsyncTask<byte[],Void,Bitmap>{
+
+    ImageView imageView;
+    String imageUrl;
+    Reward reward;
+
+    public FetchRewardImageTask(ImageView imageView) {
+        this.imageView = imageView;
+    }
+
+    public FetchRewardImageTask(ImageView imageView, Reward reward) {
+        this.imageView = imageView;
+        this.imageUrl = reward.getImageUrl();
+        this.reward = reward;
+    }
+
+    @Override
+    protected Bitmap doInBackground(byte[]... imageBytes) {
+        //If image bytes are not set, fetch the image and set the bytes
+        if(imageBytes[0] == null && imageUrl!=null) {
+            imageBytes[0] = ImageUtility.getImageBytes(AppConstants.BASE_URL+imageUrl);
+            reward.setImage(imageBytes[0]);
+        }
+        //Check if still null
+        if(imageBytes[0]!=null)
+        {
+            return ImageUtility.getImageBitmap(imageBytes[0]);
+        }
+        return null;
+    }
+
+    @Override
+    protected void onPreExecute() {
+        Log.i("Iame download- pre", "onPreExecute Called");
+    }
+
+    @Override
+    protected void onPostExecute(Bitmap result) {
+        Log.i("Async-Example", "onPostExecute Called");
+        if(result!=null)
+        {
+            imageView.setImageBitmap(result);
+        }
+    }
+
+
+}

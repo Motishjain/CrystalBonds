@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="@dimen/base2"
+                android:color="@color/black" />
+            <padding
+                android:bottom="@dimen/base2"
+                android:left="@dimen/base2"
+                android:right="@dimen/base2"
+                android:top="@dimen/base2" />
+        </shape>
+    </item>
+</layer-list>

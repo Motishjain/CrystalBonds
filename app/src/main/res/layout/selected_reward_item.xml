@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/base120"
+    android:layout_marginLeft="@dimen/item_offset"
+    android:layout_marginTop="@dimen/base5"
+    android:layout_marginBottom="@dimen/base5"
+    android:id="@+id/selectedRewardBox"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/selectedRewardDeleteButton"
+        android:src="@drawable/ic_delete_forever"
+        android:layout_width="@dimen/base22"
+        android:layout_height="@dimen/base22"
+        android:layout_marginLeft="@dimen/base5"
+        android:layout_gravity="top|right"
+        />
+
+    <ImageView
+        android:id="@+id/selectedRewardImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base90"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal|center_vertical"
+        style="@style/rewardImage"  />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/base2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical">
+
+        <com.admin.view.CustomFontTextView
+            android:id="@+id/selectedRewardName"
+            android:layout_marginLeft="@dimen/base5"
+            style="@style/rewardName" />
+
+        <com.admin.view.CustomFontTextView
+            android:id="@+id/selectedRewardCost"
+            android:layout_marginLeft="@dimen/base5"
+            android:layout_marginTop="@dimen/base2"
+            style="@style/rewardCost" />
+
+    </LinearLayout>
+
+</LinearLayout>

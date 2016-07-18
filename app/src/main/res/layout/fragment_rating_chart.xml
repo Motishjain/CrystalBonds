@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="layout.RatingChartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base48"
+        android:id="@+id/chartHeaderContainer"
+        android:orientation="horizontal"
+        android:background="#1E0F46"
+        android:layout_marginTop="@dimen/base2">
+
+        <View
+            android:id="@+id/ratingLeftLine"
+            android:layout_width="@dimen/base16"
+            android:layout_height="match_parent"
+            android:background="#1DE9B6"/>
+
+        <TextView
+            android:id="@+id/ratingChartHeader"
+            style="@style/selectQuestion"
+            android:layout_marginLeft="@dimen/base3"
+            android:layout_gravity="center_vertical|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFFFF"
+            android:layout_weight="13" />
+
+        <TextView
+            android:id="@+id/ratingValue"
+            style="@style/selectQuestion"
+            android:layout_gravity="center_vertical|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/base25"
+            android:layout_height="@dimen/base25"
+            android:id="@+id/imageViewDropdown"
+            android:src="@drawable/ic_expand_more_white"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/base16"
+            android:layout_marginLeft="@dimen/base16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chartContainer"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.admin.view.CustomFontTextView
+            style="@style/selectQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base16"
+            android:text="Select a question to view its ratings:"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/base16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base30"
+            android:layout_marginBottom="@dimen/base16">
+
+            <TextView
+                android:id="@+id/questionsSpinner"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/font16"
+                android:layout_height="@dimen/base27"
+                android:layout_marginLeft="@dimen/base32"
+                android:paddingLeft="@dimen/base10"
+                android:paddingRight="@dimen/base20"
+                android:background="@drawable/custom_spinner_container"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="@dimen/base32"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:layout_width="@dimen/base30"
+                android:layout_height="@dimen/base30"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_arrow_drop_down_black"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@id/questionsSpinner" />
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/ratingSummaryChart"
+            android:layout_width="@dimen/base300"
+            android:layout_height="@dimen/base300"
+            android:layout_marginTop="@dimen/base16"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/base16" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+#
+# generated on 2016/06/22 10:36:39
+#
+# --table-start--
+dataClass=com.admin.database.Outlet
+tableName=OUTLET
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=outletName
+# --field-end--
+# --field-start--
+fieldName=outletType
+# --field-end--
+# --field-start--
+fieldName=outletCode
+# --field-end--
+# --field-start--
+fieldName=addrLine1
+# --field-end--
+# --field-start--
+fieldName=addrLine2
+# --field-end--
+# --field-start--
+fieldName=pinCode
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=cellNumber
+# --field-end--
+# --field-start--
+fieldName=workPhoneNumber
+# --field-end--
+# --field-start--
+fieldName=activeFlag
+# --field-end--
+# --field-start--
+fieldName=gcmToken
+# --field-end--
+# --field-start--
+fieldName=areGoodiesAvailable
+dataPersister=BOOLEAN
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.User
+tableName=USER
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=phoneNumber
+# --field-end--
+# --field-start--
+fieldName=carryForwardAmount
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.Question
+tableName=QUESTION
+# --table-fields-start--
+# --field-start--
+fieldName=questionId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=ratingValues
+# --field-end--
+# --field-start--
+fieldName=emoticonIds
+# --field-end--
+# --field-start--
+fieldName=selected
+# --field-end--
+# --field-start--
+fieldName=showNA
+# --field-end--
+# --field-start--
+fieldName=questionType
+# --field-end--
+# --field-start--
+fieldName=displayRank
+# --field-end--
+# --field-start--
+fieldName=questionInputType
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.Reward
+tableName=REWARD
+# --table-fields-start--
+# --field-start--
+fieldName=rewardId
+id=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=level
+# --field-end--
+# --field-start--
+fieldName=rewardType
+# --field-end--
+# --field-start--
+fieldName=cost
+# --field-end--
+# --field-start--
+fieldName=imageUrl
+# --field-end--
+# --field-start--
+fieldName=image
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.SelectedReward
+tableName=SELECTED_REWARD
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=reward
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=rewardCategory
+# --field-end--
+# --field-start--
+fieldName=rewardCost
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.RewardHistory
+tableName=GOODIE_HISTORY
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=goodieType
+# --field-end--
+# --field-start--
+fieldName=userPhoneNumber
+# --field-end--
+# --field-start--
+fieldName=createdTs
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.Subscription
+tableName=subscription
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=expiryDate
+# --field-end--
+# --field-start--
+fieldName=activationStatus
+# --field-end--
+# --field-start--
+fieldName=daysRemaining
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.admin.database.FailedServiceCall
+tableName=FAILED_SERVICE_CALL
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=serviceId
+# --field-end--
+# --field-start--
+fieldName=parametersJsonString
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

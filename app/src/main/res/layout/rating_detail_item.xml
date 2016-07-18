@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ratingDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <com.admin.view.CustomFontTextView
+        android:id="@+id/billDateTextView"
+        style="@style/ratingDetailCell"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base5"
+        android:paddingTop="@dimen/base5" />
+
+    <com.admin.view.CustomFontTextView
+        android:id="@+id/userPhoneNumberCellTextView"
+        style="@style/ratingDetailCell"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base5"
+        android:paddingTop="@dimen/base5" />
+
+    <com.admin.view.CustomFontTextView
+        android:id="@+id/billAmountCellTextView"
+        style="@style/ratingDetailCell"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base5"
+        android:paddingTop="@dimen/base5" />
+</LinearLayout>
