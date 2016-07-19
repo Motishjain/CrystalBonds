@@ -34,13 +34,13 @@
         android:layout_marginTop="@dimen/base2"
         android:orientation="vertical">
 
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             android:id="@+id/selectRewardName"
             style="@style/rewardName"
             android:layout_marginLeft="@dimen/base5"
             />
 
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             android:id="@+id/selectRewardCost"
             style="@style/rewardCost"
             android:layout_marginTop="@dimen/base2"

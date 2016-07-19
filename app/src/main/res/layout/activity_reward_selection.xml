@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.admin.crystalrating.RewardSelectionActivity">
+    tools:context="com.midwayideas.crystalbonds.RewardSelectionActivity">
 
 
     <include layout="@layout/content_reward_selection" />
@@ -18,7 +18,7 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/AppTheme.PopupOverlay">
 
-        <com.admin.view.CustomFontTextView style="@style/appHeader" android:textSize="@dimen/base20" android:text="Select Rewards" android:layout_marginLeft="@dimen/base15"/>
+        <com.midwayideas.view.CustomFontTextView style="@style/appHeader" android:textSize="@dimen/base20" android:text="Select Rewards" android:layout_marginLeft="@dimen/base15"/>
 
     </android.support.v7.widget.Toolbar>
 

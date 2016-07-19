@@ -32,12 +32,12 @@
         android:layout_gravity="bottom|left"
         android:orientation="vertical">
 
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             android:id="@+id/selectedRewardName"
             android:layout_marginLeft="@dimen/base5"
             style="@style/rewardName" />
 
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             android:id="@+id/selectedRewardCost"
             android:layout_marginLeft="@dimen/base5"
             android:layout_marginTop="@dimen/base2"

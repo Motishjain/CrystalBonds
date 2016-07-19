@@ -5,7 +5,7 @@
     android:orientation="horizontal"
     android:weightSum="3">
 
-    <com.admin.view.CustomFontTextView
+    <com.midwayideas.view.CustomFontTextView
         android:id="@+id/billDateTextView"
         style="@style/ratingDetailCell"
         android:layout_width="0dp"
@@ -14,7 +14,7 @@
         android:paddingBottom="@dimen/base5"
         android:paddingTop="@dimen/base5" />
 
-    <com.admin.view.CustomFontTextView
+    <com.midwayideas.view.CustomFontTextView
         android:id="@+id/userPhoneNumberCellTextView"
         style="@style/ratingDetailCell"
         android:layout_width="0dp"
@@ -23,7 +23,7 @@
         android:paddingBottom="@dimen/base5"
         android:paddingTop="@dimen/base5" />
 
-    <com.admin.view.CustomFontTextView
+    <com.midwayideas.view.CustomFontTextView
         android:id="@+id/billAmountCellTextView"
         style="@style/ratingDetailCell"
         android:layout_width="0dp"

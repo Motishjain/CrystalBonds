@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="com.admin.crystalrating.RewardConfigurationActivity"
+        tools:context="com.midwayideas.crystalbonds.RewardConfigurationActivity"
         tools:showIn="@layout/activity_reward_configuration">
 
         <FrameLayout
@@ -25,7 +25,7 @@
                 android:layout_gravity="left"
                 android:orientation="vertical">
 
-                <com.admin.view.CustomFontTextView
+                <com.midwayideas.view.CustomFontTextView
                     android:id="@+id/rewardConfigurationHeader"
                     style="@style/screenHeader"
                     android:layout_marginTop="@dimen/base50"
@@ -53,7 +53,7 @@
                         android:src="@drawable/ic_add_reward"
                         android:tint="@color/colorPrimary" />
 
-                    <com.admin.view.CustomFontTextView
+                    <com.midwayideas.view.CustomFontTextView
                         style="@style/rewardBoxHeader"
                         android:layout_width="wrap_content"
                         android:layout_gravity="left|center"
@@ -72,7 +72,7 @@
                     android:layout_marginTop="@dimen/base10"
                     android:background="@drawable/level_reward_box" />
 
-                <com.admin.view.CustomFontButton
+                <com.midwayideas.view.CustomFontButton
                     android:id="@+id/rewardsConfigureNextButton"
                     style="@style/formButton"
                     android:layout_height="@dimen/base35"

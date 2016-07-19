@@ -58,7 +58,7 @@
         android:visibility="gone"
         android:orientation="vertical">
 
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             style="@style/selectQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

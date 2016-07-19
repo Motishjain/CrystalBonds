@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/base11"
     android:paddingTop="@dimen/base11"
     android:weightSum="4"
-    tools:context="com.admin.crystalrating.SubscriptionInfoActivity"
+    tools:context="com.midwayideas.crystalbonds.SubscriptionInfoActivity"
     android:background="@drawable/subscribe_item_border">
 
     <LinearLayout
@@ -36,7 +36,7 @@
             android:text="" />
     </LinearLayout>
 
-    <com.admin.view.CustomFontButton
+    <com.midwayideas.view.CustomFontButton
         android:id="@+id/payNowButton"
         style="@style/formButton"
         android:layout_width="0dp"

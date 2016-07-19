@@ -2,7 +2,7 @@
 # generated on 2016/06/22 10:36:39
 #
 # --table-start--
-dataClass=com.admin.database.Outlet
+dataClass=com.midwayideas.database.Outlet
 tableName=OUTLET
 # --table-fields-start--
 # --field-start--
@@ -50,7 +50,7 @@ dataPersister=BOOLEAN
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.User
+dataClass=com.midwayideas.database.User
 tableName=USER
 # --table-fields-start--
 # --field-start--
@@ -70,7 +70,7 @@ fieldName=carryForwardAmount
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.Question
+dataClass=com.midwayideas.database.Question
 tableName=QUESTION
 # --table-fields-start--
 # --field-start--
@@ -104,7 +104,7 @@ fieldName=questionInputType
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.Reward
+dataClass=com.midwayideas.database.Reward
 tableName=REWARD
 # --table-fields-start--
 # --field-start--
@@ -134,7 +134,7 @@ dataPersister=BYTE_ARRAY
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.SelectedReward
+dataClass=com.midwayideas.database.SelectedReward
 tableName=SELECTED_REWARD
 # --table-fields-start--
 # --field-start--
@@ -156,7 +156,7 @@ fieldName=rewardCost
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.RewardHistory
+dataClass=com.midwayideas.database.RewardHistory
 tableName=GOODIE_HISTORY
 # --table-fields-start--
 # --field-start--
@@ -176,7 +176,7 @@ fieldName=createdTs
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.Subscription
+dataClass=com.midwayideas.database.Subscription
 tableName=subscription
 # --table-fields-start--
 # --field-start--
@@ -196,7 +196,7 @@ fieldName=daysRemaining
 # --table-end--
 #################################
 # --table-start--
-dataClass=com.admin.database.FailedServiceCall
+dataClass=com.midwayideas.database.FailedServiceCall
 tableName=FAILED_SERVICE_CALL
 # --table-fields-start--
 # --field-start--

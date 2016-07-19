@@ -16,7 +16,7 @@
             android:weightSum="10"
             android:layout_marginBottom="@dimen/base16">
 
-            <com.admin.view.CustomFontTextView
+            <com.midwayideas.view.CustomFontTextView
                 style="@style/dateText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
                 android:layout_weight="3"
                 android:text="From Date" />
 
-            <com.admin.view.CustomFontTextView
+            <com.midwayideas.view.CustomFontTextView
                 android:id="@+id/fromDate"
                 style="@style/dateText"
                 android:layout_width="0dp"
@@ -50,7 +50,7 @@
             android:paddingTop="@dimen/base16"
             android:paddingBottom="@dimen/base16">
 
-            <com.admin.view.CustomFontTextView
+            <com.midwayideas.view.CustomFontTextView
                 style="@style/dateText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 android:layout_weight="3"
                 android:text="To Date" />
 
-            <com.admin.view.CustomFontTextView
+            <com.midwayideas.view.CustomFontTextView
                 android:id="@+id/toDate"
                 style="@style/dateText"
                 android:layout_width="0dp"
@@ -82,14 +82,14 @@
             android:visibility="gone"
             android:layout_marginTop="@dimen/base100" >
 
-            <com.admin.view.CustomFontTextView
+            <com.midwayideas.view.CustomFontTextView
                 style="@style/connectionError"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not able to connect to server!"
                 android:gravity="center" />
 
-            <com.admin.view.CustomFontButton
+            <com.midwayideas.view.CustomFontButton
                 android:id="@+id/tryAgainButton"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/base50"

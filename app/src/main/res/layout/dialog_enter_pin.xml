@@ -11,7 +11,7 @@
         android:layout_marginRight="@dimen/base5"
         android:layout_marginTop="@dimen/base15">
 
-        <com.admin.view.CustomFontEditText
+        <com.midwayideas.view.CustomFontEditText
             android:id="@+id/inputPinText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

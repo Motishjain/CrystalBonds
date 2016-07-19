@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.admin.crystalrating.LoadingActivity">
+    tools:context="com.midwayideas.crystalbonds.LoadingActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:background="@color/headerBg"
         android:id="@+id/toolbar"
         app:popupTheme="@style/AppTheme.PopupOverlay" >
-        <com.admin.view.CustomFontTextView
+        <com.midwayideas.view.CustomFontTextView
             style="@style/appHeader"
             />
     </android.support.v7.widget.Toolbar>

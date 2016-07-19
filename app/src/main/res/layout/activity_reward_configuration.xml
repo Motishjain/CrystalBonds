@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.admin.crystalrating.RewardConfigurationActivity">
+    tools:context="com.midwayideas.crystalbonds.RewardConfigurationActivity">
 
     <include layout="@layout/content_reward_configuration" />
 
@@ -17,7 +17,7 @@
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/AppTheme.PopupOverlay">
 
-        <com.admin.view.CustomFontTextView style="@style/appHeader" />
+        <com.midwayideas.view.CustomFontTextView style="@style/appHeader" />
     </android.support.v7.widget.Toolbar>
 
 </android.support.design.widget.CoordinatorLayout>
