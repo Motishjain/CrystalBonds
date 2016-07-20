@@ -8,10 +8,10 @@
     {
       "client_info": {
         "mobilesdk_app_id": "1:331035725817:android:b403e8c9d4bc0b6c",
-        "client_id": "android:com.admin.crystalbonds",
+        "client_id": "android:com.midwayideas.crystalbonds",
         "client_type": 1,
         "android_client_info": {
-          "package_name": "com.admin.crystalbonds",
+          "package_name": "com.midwayideas.crystalbonds",
           "certificate_hash": []
         }
       },
