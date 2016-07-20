@@ -1,17 +1,17 @@
 {
   "project_info": {
-    "project_id": "crystalrating-b040",
+    "project_id": "crystalbonds-b040",
     "project_number": "331035725817",
-    "name": "CrystalRating"
+    "name": "CrystalBonds"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:331035725817:android:b403e8c9d4bc0b6c",
-        "client_id": "android:com.admin.crystalrating",
+        "client_id": "android:com.admin.crystalbonds",
         "client_type": 1,
         "android_client_info": {
-          "package_name": "com.admin.crystalrating",
+          "package_name": "com.admin.crystalbonds",
           "certificate_hash": []
         }
       },

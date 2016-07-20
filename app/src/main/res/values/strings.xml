@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">CrystalRating</string>
-    <string name="app_header">CrystalRating</string>
+    <string name="app_name">CrystalBonds</string>
+    <string name="app_header">CrystalBonds</string>
     <string name="action_edit_profile">Edit Outlet Details</string>
     <string name="action_rewards">Rewards</string>
     <string name="action_check_reports">Check Reports</string>
     <string name="action_subscription_info">Subscription Info</string>
-    <string name="title_activity_home_page">CrystalRating</string>
-    <string name="title_activity_loading">CrystalRating</string>
-    <string name="title_activity_goodie_display">CrystalRating</string>
-    <string name="title_activity_get_rating">CrystalRating</string>
+    <string name="title_activity_home_page">CrystalBonds</string>
+    <string name="title_activity_loading">CrystalBonds</string>
+    <string name="title_activity_goodie_display">CrystalBonds</string>
+    <string name="title_activity_get_rating">CrystalBonds</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="title_activity_reward_configuration">CrystalRating</string>
+    <string name="title_activity_reward_configuration">CrystalBonds</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="previous">Previous</string>
@@ -22,7 +22,7 @@
     <string name="pin_code">Pin Code</string>
     <string name="email_id">Email Id</string>
     <string name="mobile_number">Mobile Number</string>
-    <string name="title_activity_bill_details">CrystalRating</string>
+    <string name="title_activity_bill_details">CrystalBonds</string>
     <string name="title_activity_reward_selection">Select rewards</string>
     <string name="newApplicationFont">comicsansms.ttf</string>
     <string name="applicationFont">comicsansms.ttf</string>
